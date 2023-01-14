@@ -6,7 +6,7 @@ An iLok-like dongle based activator created with Python
 1. macOS High Sierra (10.13) or later
 2. Windows 10 20H2 or later
 
-## Requires Python version and all needed libraries
+## Python and libraries needed
 python:
 - Python 3.9 or later
 
