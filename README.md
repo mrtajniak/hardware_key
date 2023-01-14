@@ -1,22 +1,22 @@
-# Wstęp
-Aktywator oparty na kluczu sprzętowym podobnym do iLok stworzony za pomocą Pythona
+# Introduction
+An iLok-like dongle based activator created with Python
 
-# Wymagania
-## System operacyjny
-1. macOS High Sierra (10.13) lub nowszy
-2. Windows 10 20H2 lub nowszy (skrypt nie został przetestowany)
+# Requirements
+## Operating system
+1. macOS High Sierra (10.13) or later
+2. Windows 10 20H2 or later
 
-## Wymagana wersja Python i wszystkie potrzebne biblioteki
-Python:
-- Python 3.11 lub nowszy
+## Requires Python version and all needed libraries
+python:
+- Python 3.9 or later
 
-Biblioteki:
+Libraries:
 - pyUSB
 - pyOpenSSL
 - crypto
 
-## Jak rozpocząć pracę
-1. Skolnuj repozyroium na swój komputer za pomocą Visual Studio lub Visual Studio Code
-2. Uruchum polecenie `pip install -r requirements.txt`
-3. Otwórz plik python w wybranym IDE aby go edytować lub przetestować
-4. **WAŻNE: Na potrzebny testów należy zmienić numer seryjny dysku USB**
+## How to get started
+1. Clone the repository to your computer using Visual Studio or Visual Studio Code
+2. Run `pip install -r requirements.txt`
+3. Open the python file in your IDE for editing or testing
+4. **IMPORTANT: Please change USB drive serial number for testing**
