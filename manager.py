@@ -3,17 +3,21 @@ from OpenSSL import crypto
 import usb
 
 usb_serial_number = '0A7205079090'
+print("Expected serial number:", usb_serial_number)
 
 # Iterate over all connected USB devices
 for device in usb.core.find(find_all=True):
     # Get the serial number of the USB device
     serial_number = device.serial_number
+    print("Serial:", serial_number)
     if serial_number == usb_serial_number:
         # Get the device file associated with the USB device
         device_file = usb.util.get_string(device, device.iSerialNumber)
+        print("Device:", device_file)
         # Search for the certificate file in the root directory of the USB stick
         for root, dirs, files in os.walk(device_file):
             for file in files:
+                print("File name:", file)
                 if file.endswith(".pem"):
                     key_file = os.path.join(root, file)
                     break
